@@ -29,16 +29,21 @@
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container hero-inner">
-    <span class="kicker">Otoño • Scarsdale • 4 de Octubre</span>
-    <h1>Sesiones Familiares<br />Fine Art</h1>
-    <p class="lead">¡La sesión más bonita del año ya llegó a New York!<br />
-      Esto que estás viendo no se repite hasta un año más 🍂<br />
-      Hay momentos que pasan tan rápido que solo te das cuenta cuando ya terminaron&hellip; y esta es tu oportunidad de guardarlos.</p>
-    <a href="#colecciones" class="btn btn-outline">Quiero mi sesión</a>
-    <div class="hero-badges">
-      <span>Solo 6 sesiones</span>
-      <span>Hasta 60 minutos</span>
-      <span>Mascotas bienvenidas</span>
+    <div class="hero-text">
+      <span class="kicker">Otoño • Scarsdale • 4 de Octubre</span>
+      <h1>Sesiones Familiares<br />Fine Art</h1>
+      <p class="lead">¡La sesión más bonita del año ya llegó a New York!<br />
+        Esto que estás viendo no se repite hasta un año más 🍂<br />
+        Hay momentos que pasan tan rápido que solo te das cuenta cuando ya terminaron&hellip; y esta es tu oportunidad de guardarlos.</p>
+      <a href="#colecciones" class="btn btn-primary">Quiero mi sesión</a>
+      <div class="hero-badges">
+        <span>Solo 6 sesiones</span>
+        <span>Hasta 60 minutos</span>
+        <span>Mascotas bienvenidas</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.jpg" alt="Mamá caminando con sus dos hijos entre hojas de otoño" loading="eager" />
     </div>
   </div>
 </section>
@@ -96,19 +101,42 @@
 
 <!-- ============ GALERÍA ============ -->
 <section class="gallery">
-  <div class="container">
-    <div class="gallery-grid">
-      <div class="gallery-top">
+  <div class="carousel" data-interval="4500">
+    <div class="carousel-track">
+      <figure class="carousel-slide is-active">
+        <img src="images/carousel-1.jpg" alt="Mamá e hija riendo mientras caen hojas de otoño" loading="eager" />
+      </figure>
+      <figure class="carousel-slide">
         <img src="images/gallery-1.jpg" alt="Niña jugando con una vara junto a un río en otoño" loading="lazy" />
-      </div>
-      <div class="gallery-bottom">
-        <div>
-          <img src="images/gallery-2.jpg" alt="Dos hermanos recostados entre hojas de otoño" loading="lazy" />
-        </div>
-        <div>
-          <img src="images/gallery-3.jpg" alt="Dos hermanas lanzando hojas de otoño al aire" loading="lazy" />
-        </div>
-      </div>
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/gallery-3.jpg" alt="Dos hermanas lanzando hojas de otoño al aire" loading="lazy" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-4.jpg" alt="Dos hermanas caminando de la mano por un camino de tierra" loading="lazy" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-5.jpg" alt="Niña junto a su perro en un día de otoño" loading="lazy" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-6.jpg" alt="Niño sentado sobre un tronco junto al río" loading="lazy" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/gallery-2.jpg" alt="Dos hermanos recostados entre hojas de otoño" loading="lazy" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-8.jpg" alt="Niña caminando por un sendero de árboles en otoño" loading="lazy" />
+      </figure>
+    </div>
+    <div class="carousel-dots">
+      <button class="carousel-dot is-active" type="button" data-index="0" aria-label="Foto 1"></button>
+      <button class="carousel-dot" type="button" data-index="1" aria-label="Foto 2"></button>
+      <button class="carousel-dot" type="button" data-index="2" aria-label="Foto 3"></button>
+      <button class="carousel-dot" type="button" data-index="3" aria-label="Foto 4"></button>
+      <button class="carousel-dot" type="button" data-index="4" aria-label="Foto 5"></button>
+      <button class="carousel-dot" type="button" data-index="5" aria-label="Foto 6"></button>
+      <button class="carousel-dot" type="button" data-index="6" aria-label="Foto 7"></button>
+      <button class="carousel-dot" type="button" data-index="7" aria-label="Foto 8"></button>
     </div>
   </div>
 </section>
