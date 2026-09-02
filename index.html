@@ -14,37 +14,58 @@
 
 <!-- ============ HEADER ============ -->
 <header class="site-header">
-  <div class="container">
-    <a href="#" class="brand">
+  <div class="container site-header-inner">
+    <a href="#inicio" class="brand">
       <img src="images/logo.png" alt="Bernardita Aguirre" />
       <span class="brand-text">
         <span class="brand-sub">Fine Art Photography</span>
       </span>
     </a>
-    <!-- TODO: reemplazar href="#colecciones" por el link real de reserva (mailto, Calendly, formulario, etc.) cuando esté definido -->
-    <a href="#colecciones" class="btn btn-dark">Reserva tu sesión</a>
+
+    <nav class="nav" id="site-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#estilo">Mi estilo</a>
+      <a href="#galeria">Galería</a>
+      <a href="#experiencia">Cómo funciona</a>
+      <a href="#colecciones">Precio</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="site-header-actions">
+      <!-- TODO: reemplazar href="#colecciones" por el link real de reserva (mailto, Calendly, formulario, etc.) cuando esté definido -->
+      <a href="#colecciones" class="btn btn-dark nav-reserve">Reservar</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero">
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <img src="images/hero.jpg" alt="Mamá caminando con sus dos hijos entre hojas de otoño" loading="eager" />
+  </div>
   <div class="container hero-inner">
-    <div class="hero-text">
-      <span class="kicker">Otoño • Scarsdale • 4 de Octubre</span>
-      <h1>Sesiones Familiares<br />Fine Art</h1>
-      <p class="lead">¡La sesión más bonita del año ya llegó a New York!<br />
+    <span class="hero-kicker"><span class="hero-kicker-dash"></span>Otoño • Scarsdale • 4 de Octubre</span>
+    <h1>Sesiones Familiares<br />Fine Art</h1>
+    <p class="hero-subtitle">en Scarsdale, New York</p>
+
+    <div class="hero-note">
+      <p>¡La sesión más bonita del año ya llegó a New York!<br />
         Esto que estás viendo no se repite hasta un año más 🍂<br />
         Hay momentos que pasan tan rápido que solo te das cuenta cuando ya terminaron&hellip; y esta es tu oportunidad de guardarlos.</p>
-      <a href="#colecciones" class="btn btn-primary">Quiero mi sesión</a>
-      <div class="hero-badges">
-        <span>Solo 6 sesiones</span>
-        <span>Hasta 60 minutos</span>
-        <span>Mascotas bienvenidas</span>
-      </div>
     </div>
-    <div class="hero-photo">
-      <img src="images/hero.jpg" alt="Mamá caminando con sus dos hijos entre hojas de otoño" loading="eager" />
+
+    <div class="hero-badges">
+      <span class="hero-badge">📍 Scarsdale, NY</span>
+      <span class="hero-badge">🗓️ 4 Oct 2026</span>
+      <span class="hero-badge">⏱️ Hasta 60 min</span>
+      <span class="hero-badge">🐾 Mascotas bienvenidas</span>
     </div>
+
+    <a href="#colecciones" class="btn btn-primary hero-cta">Quiero mi sesión</a>
   </div>
 </section>
 
@@ -66,7 +87,7 @@
 </section>
 
 <!-- ============ MI MANERA DE FOTOGRAFIAR ============ -->
-<section class="style-section">
+<section class="style-section" id="estilo">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Mi manera de fotografiar</span>
@@ -100,7 +121,7 @@
 </section>
 
 <!-- ============ GALERÍA ============ -->
-<section class="gallery">
+<section class="gallery" id="galeria">
   <div class="carousel" data-interval="4500">
     <div class="carousel-track">
       <figure class="carousel-slide is-active">
@@ -342,6 +363,14 @@
     <span>Scarsdale, NY · Otoño</span>
   </div>
 </footer>
+
+<!-- TODO: reemplazar el número por el WhatsApp real de Bernardita, formato https://wa.me/1XXXXXXXXXX -->
+<a href="https://wa.me/1XXXXXXXXXX" class="whatsapp-fab" target="_blank" rel="noopener">
+  <span class="whatsapp-fab-avatar">
+    <img src="images/about.jpg" alt="" loading="lazy" />
+  </span>
+  <span class="whatsapp-fab-text">Habla con Bernardita</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

@@ -70,3 +70,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   start();
 });
+
+// Menú de navegación (hamburguesa en mobile)
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("nav-toggle");
+  var nav = document.getElementById("site-nav");
+  if (!toggle || !nav) return;
+
+  function closeNav() {
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+
+  toggle.addEventListener("click", function () {
+    var isOpen = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // Cierra el menú al elegir una sección
+  nav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeNav);
+  });
+});
