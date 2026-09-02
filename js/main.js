@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var slides = carousel.querySelectorAll(".carousel-slide");
   var dots = carousel.querySelectorAll(".carousel-dot");
+  var prevBtn = carousel.querySelector(".carousel-arrow-prev");
+  var nextBtn = carousel.querySelector(".carousel-arrow-next");
   var interval = parseInt(carousel.dataset.interval, 10) || 4500;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var current = 0;
@@ -64,6 +66,20 @@ document.addEventListener("DOMContentLoaded", function () {
       start();
     });
   });
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function () {
+      goTo(current - 1);
+      start();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function () {
+      goTo(current + 1);
+      start();
+    });
+  }
 
   carousel.addEventListener("mouseenter", stop);
   carousel.addEventListener("mouseleave", start);

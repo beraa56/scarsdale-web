@@ -550,6 +550,46 @@ section {
   transform: scale(1.2);
 }
 
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(20, 16, 10, 0.35);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(20, 16, 10, 0.6);
+}
+
+.carousel-arrow-prev {
+  left: 16px;
+}
+
+.carousel-arrow-next {
+  right: 16px;
+}
+
+@media (max-width: 520px) {
+  .carousel-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+  }
+}
+
 /* ---------- Experience timeline ---------- */
 
 .experience {
@@ -582,6 +622,78 @@ section {
 
 .step p {
   font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ---------- Testimonials ---------- */
+
+.testimonials {
+  background: var(--cream-alt);
+}
+
+.testimonials-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 48px 28px;
+}
+
+.testimonials-kicker {
+  display: block;
+  text-align: center;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-style: italic;
+  margin: 6px 0 44px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 44px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--cream-alt);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-quote {
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  max-width: 320px;
+}
+
+.testimonial-name {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink);
   margin: 0;
 }
 
@@ -856,6 +968,24 @@ footer {
 }
 
 @media (min-width: 860px) {
+  .testimonials-card {
+    padding: 64px 56px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .testimonial {
+    padding: 0 32px;
+    border-right: 1px solid var(--line);
+  }
+
+  .testimonial:last-child {
+    border-right: none;
+  }
+
   .about .container {
     grid-template-columns: 1.05fr 1fr;
     align-items: center;
