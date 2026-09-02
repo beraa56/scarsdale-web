@@ -490,9 +490,9 @@ section {
 .carousel {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 620px;
-  min-height: 260px;
+  aspect-ratio: 3 / 2;
+  max-height: 820px;
+  min-height: 320px;
   overflow: hidden;
   background: var(--cream-alt);
 }
