@@ -543,12 +543,13 @@ section {
 
 .offer-photo {
   min-height: 320px;
+  background: var(--cream-alt);
 }
 
 .offer-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* ---------- Availability banner ---------- */
