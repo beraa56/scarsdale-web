@@ -1233,9 +1233,8 @@ footer {
   font-size: 0.92rem;
 }
 
-.payment-soon {
-  font-style: italic;
-  color: var(--ink-faint);
+.payment-stripe-btn {
+  margin-top: 4px;
 }
 
 @media (min-width: 600px) {
