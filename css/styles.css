@@ -1076,6 +1076,186 @@ footer {
   }
 }
 
+/* ---------- Página de reservas ---------- */
+
+.booking-intro {
+  background: var(--cream-alt);
+  padding-top: 150px;
+}
+
+.booking-intro h1 {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  margin-bottom: 6px;
+}
+
+.booking-intro-text {
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.booking-slots {
+  background: var(--cream);
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.slot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.slot-card.is-reserved {
+  opacity: 0.6;
+}
+
+.slot-time {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+
+.slot-badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.slot-badge.available {
+  background: var(--cream-alt);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.slot-badge.reserved {
+  background: var(--ink);
+  color: #fff;
+}
+
+.slot-card .btn {
+  width: 100%;
+}
+
+.slot-taken-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.booking-form-section {
+  background: var(--cream-alt);
+}
+
+.booking-form-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.booking-form,
+.payment-info {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 36px 28px;
+}
+
+.booking-form h2 {
+  margin: 6px 0 26px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 2px;
+}
+
+.form-field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.booking-submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.booking-form-note {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin: 14px 0 0;
+}
+
+.payment-info h3 {
+  font-size: 1.05rem;
+  margin: 22px 0 8px;
+}
+
+.payment-info h3:first-of-type {
+  margin-top: 18px;
+}
+
+.payment-info p {
+  font-size: 0.92rem;
+}
+
+.payment-soon {
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+@media (min-width: 600px) {
+  .slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 860px) {
+  .slots-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .booking-form-wrap {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: start;
+  }
+}
+
 /* ---------- WhatsApp flotante ---------- */
 
 .whatsapp-fab {
