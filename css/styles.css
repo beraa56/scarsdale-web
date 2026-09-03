@@ -770,6 +770,29 @@ section {
   color: var(--ink-faint);
 }
 
+.offer-price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.offer-price-old {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--ink-faint);
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+.offer-price-badge {
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brown);
+  white-space: nowrap;
+}
+
 .offer-price {
   font-family: var(--font-serif);
   font-size: 2.3rem;
