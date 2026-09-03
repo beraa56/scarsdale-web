@@ -330,9 +330,8 @@ section {
 }
 
 .hero-note {
-  background: var(--cream-alt);
   border-left: 2px solid var(--btn-primary);
-  padding: 16px 20px;
+  padding: 4px 0 4px 20px;
   margin: 24px 0;
   max-width: 480px;
 }
